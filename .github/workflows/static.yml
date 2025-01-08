@@ -41,17 +41,6 @@ jobs:
           cp -r src/* pages/
           ls -sail pages/ 
 
-      - name: Auto Minify
-        uses: nizarmah/auto-minify@v3
-        with:
-          directory: 'src/css'
-          output: 'pages/css'
-
-      - name: Rename minified css
-        run: |
-          ls -sail pages/
-          sudo mv pages/css/main.min.css pages/css/main.css
-
       - name: Generate the sitemap
         id: sitemap
         uses: cicirello/generate-sitemap@v1
@@ -90,6 +79,6 @@ jobs:
 
       - name: Submit sitemap
         run: |
-          curl https://www.google.com/ping?sitemap=https://jessey.bullock.sh/sitemap.xml  
+          curl https://www.google.com/ping?sitemap=https://garboshooktotable.com/sitemap.xml  
           
           
