@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Page Background with Link</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+        .background {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: url('img/connorgarbo.png') no-repeat center center fixed;
+            background-size: contain;
+            background-color: rgb(219,228,224);
+        }
+        .instagram-logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+        }
+        .instagram-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <a href="https://www.instagram.com/garbocooks" target="_blank" class="instagram-logo">
+        <img src="img/instagram.png" alt="Instagram Logo">
+    </a>
+</body>
+</html>
